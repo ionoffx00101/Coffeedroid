@@ -24,13 +24,10 @@ dependencies {
   androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
     exclude group: 'com.android.support', module: 'support-annotations'
   })
-  compile 'com.android.support:appcompat-v7:25.3.0'
+  compile 'com.android.support:appcompat-v7:25.3.0'  // 나는 프로젝트 생성 때부터 있었는데 필요한거라고 함
   compile 'com.android.support.constraint:constraint-layout:1.0.1'
-  compile 'com.google.android.gms:play-services-cast:10.2.0'
-  compile 'com.android.support:mediarouter-v7:25.3.0'
+  compile 'com.google.android.gms:play-services-cast:10.2.0' // -1- Google play service 할 때 추가됨
+  compile 'com.google.android.gms:play-services-cast-framework:10.2.0'
+  compile 'com.android.support:mediarouter-v7:25.3.0' // -2 - v7 mediarouter library 할 때 추가됨
   testCompile 'junit:junit:4.12'
-}
-
-dependencies {
-  compile 'com.android.support:mediarouter-v7:25.3.0'
 }
